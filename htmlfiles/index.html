@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>petsee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" href="style.CSS" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @media only screen and (max-width: 767px) {
+    .featured-tab-area .tabs {
+      margin: 20px 0 0;
+      float: none;
+      text-align: left;
+    }}
+
+    body {
+
+      margin-left: 2px;
+      margin-right: 2px;
+      background-color: rgb(173, 171, 179);
+    }
+
+    .card-img-top {
+      height: 200px;
+    }
+
+    .card-body {
+      height: 100px;
+    }
+
+    .card-footer,
+    .btn {
+      width: 1;
+    }
+
+    .card {
+      margin-left: 50px;
+      margin-right: 5px;
+      box-shadow: 5px 5px 20px black;
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.15);
+    }
+
+    #one {
+      animation: slideIn 2s infinite;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      50% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(20%);
+      }
+    }
+
+    .footer-container,
+    .nav-footer,
+    .footer-bottom,
+    .social-icons {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .footer {
+      background-color: #2f3d7e;
+      padding: 0px;
+    }
+
+    .footer-container {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      padding: 5px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 70%;
+    }
+
+    .social-icons a i {
+      font-size: 2em;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+
+    .social-icons a:hover {
+      transition: 0.5s;
+      background-color: #2f3d7e;
+    }
+
+    .social-icons a i {
+      color: #00030f;
+      transition: 0.5s;
+    }
+
+    .nav-footer {
+      margin: 30px 0px;
+    }
+
+    .nav-footer ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-footer ul a {
+      color: #dbd7d7;
+      font-size: 1.3em;
+      margin: 20px;
+      opacity: 0.7;
+      text-decoration: none;
+      transition: 0.5s
+    }
+
+    .nav-footer ul a:hover {
+      opacity: 1.5;
+    }
+
+    .footer-bottom {
+      background-color: #252424;
+      padding: 20px;
+      ;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: white;
+    }
+
+    .cat {
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0 5px;
+
+    }
+
+    .badge {
+      background-color: #2f3d7e
+    }
+
+    h1 {
+      color: white;
+    }
+</style>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <div class="full">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 id="one">CATSY</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Our-Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="others.html">About-Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit"><a href="login.html">SignUp</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--NAVBAR CLOSED -->
+    <!-- COURSEL OPENED -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/cat-6723256_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Kitty Care</h1>
+            <p>We are here to give you infos Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Possimus, minima libero sunt in distinctio voluptatem aut ut neque illum accusantium cum<br>
+              nostrum praesentium quae quo dicta eaque unde explicabo ratione.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/cat-4638664_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Kitty Care</h1>
+            <p>We are here to give you infos Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Possimus, minima libero sunt in distinctio voluptatem aut ut neque illum accusantium cum<br>
+              nostrum praesentium quae quo dicta eaque unde explicabo ratione.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/cat-1455468_640.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Kitty Care</h1>
+            <p>We are here to give you infos Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Possimus, minima libero sunt in distinctio voluptatem aut ut neque illum accusantium cum<br>
+              nostrum praesentium quae quo dicta eaque unde explicabo ratione.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- COURASOL CLOSED -->
+    <div class="heading mt-5" style="text-align: center;">
+      <div class="badge">
+        <h1>WHAT ARE OUR FEATURES!?</h1>
+      </div>
+    </div>
+    <!-- CARD OPENED -->
+
+    <div class="row row-cols-1 row-cols-md-4 mt-1 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/cat-4638664_640.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">De-soz</h5>
+            <p class="card-text">Type:RADGOLL<br>Price:<b> $999</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button onclick="checkLogin()">View Product</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/cat-4256821_640.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">British shortair</h5>
+            <p class="card-text">Type:SCOTTISH<br>Price:<b> $72</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" type="submit">View product</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/now.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kex Que</h5>
+            <p class="card-text">Type:MAINE COON<br>Price:<b> $241</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" type="submit">View product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 mt-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/HAG.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chinsha</h5>
+            <p class="card-text">Type:RUSSIAN BLUE<br>Price:<b> $1944</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" type="submit">View product</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/first.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">yun_Xui</h5>
+            <p class="card-text">Type:BIRMAN<br>Price:<b> $123</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" type="submit">View product</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Images/cat-6723256_640.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">lu-herdianya</h5>
+            <p class="card-text">Type:TURKISH<br>Price:<b> $999</b><em>only</em></p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" type="submit">View product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD CLOSED -->
+    <div class="heading mt-5" style="text-align: center;">
+      <div class="badge">
+        <h1>Why To Choose Us?</h1>
+      </div>
+    </div>
+    <div class="d-flex position-relative mt-4">
+      <img src="Images/istockphoto-522185081-612x612.jpg" class="flex-shrink-0 me-3" alt="...">
+      <div>
+        <h3 class="mt-0">We care Your Pates</h3>
+        <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world
+          content
+          would look like, and we're using it here to give the component a bit of body and size.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam obcaecati distinctio doloremque quia
+          saepe dolor eum alias, veniam deleniti dolorum cum iure. Beatae libero iure molestiae eum mollitia suscipit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim hic, beatae ab deserunt impedit modi
+          repellat
+          dolorum voluptates dicta omnis adipisci iure earum molestiae voluptate ut nam voluptatem totam?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem nostrum tempore quasi,
+          qui,
+          repellendus fugit itaque totam officia architecto, eum temporibus explicabo praesentium vero? Est porro
+          voluptatibus sint quia!</p>
+        <a href="#" class="stretched-link">Infos</a>
+      </div>
+    </div>
+    <div class="d-flex position-relative mt-4">
+      <img src="Images/istockphoto-824824466-612x612.jpg" class="flex-shrink-0 me-3" alt="...">
+      <div>
+        <h3 class="mt-0">Our varieties</h3>
+        <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world
+          content
+          would look like, and we're using it here to give the component a bit of body and size.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam obcaecati distinctio doloremque quia
+          saepe dolor eum alias, veniam deleniti dolorum cum iure. Beatae libero iure molestiae eum mollitia suscipit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim hic, beatae ab deserunt impedit modi
+          repellat
+          dolorum voluptates dicta omnis adipisci iure earum molestiae voluptate ut nam voluptatem totam?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem nostrum tempore quasi,
+          qui,
+          repellendus fugit itaque totam officia architecto, eum temporibus explicabo praesentium vero? Est porro
+          voluptatibus sint quia!</p>
+        <a href="#" class="stretched-link">infos</a>
+      </div>
+    </div>
+    <!-- END -->
+  </div>
+  <!-- fOOTER -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-google"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2024 Designed by<span class="cat">Catsy</span></p>
+    </div>
+  </div>
+</body>
+
+</html>
