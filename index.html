@@ -12,179 +12,164 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-   @media only screen and (min-width:280px) and (max-width:768px) {
-    .list, .row{
-      display: flex;
-    }}
-    @media (min-width:767px) and (max-width:991px) {
-     body{
-      display: grid;
-     }
-    }
-  @media only screen and (max-width: 480px) {
-    .featured-tab-area .tabs {
-      margin: 20px 0 0;
-      float: none;
-      text-align: centre;
-    }}
+  @media (max-width: 767px) {
+  .featured-tab-area .tabs {
+    margin: 20px 0 0;
+    float: right;
+   align-items: center;
+    
+  }
+  }
+  body {
+    margin: 5px;
+/*      
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(173, 171, 179); */
+  }
+   .card-img-top{
+    height: 200px;
+   }
+  .card-body{
+   height: 100px;
+  }
+  .card-footer,.btn{
+   width: 1;
+  }
+  .card {
+  margin-left: 50px;
+  margin-right: 5px;
+  box-shadow: 5px 5px 20px black;
+  transition: all 0.3s; }
+.card:hover {
+  transform: scale(1.15);
+}
+  #one {
+    animation: slideIn 2s infinite;
+  }
 
-    body {
-      margin: 5px;
-    }
-
-    .card-img-top {
-      height: 200px;
-    }
-
-    .card-body {
-      height: 100px;
-    }
-
-    .card-footer,
-    .btn {
-      width: 1;
-    }
-
-    .card {
-      margin-left: 50px;
-      margin-right: 5px;
-      box-shadow: 5px 5px 20px black;
-      transition: all 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.15);
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50%);
     }
 
-    #one {
-      animation: slideIn 2s infinite;
+    50% {
+      transform: translateX(0%);
     }
 
-    @keyframes slideIn {
-      0% {
-        transform: translateX(-50%);
-      }
-
-      50% {
-        transform: translateX(0%);
-      }
-
-      100% {
-        transform: translateX(20%);
-      }
+    100% {
+      transform: translateX(20%);
     }
+  }
 
-    .footer-container,
-    .nav-footer,
-    .footer-bottom,
-    .social-icons {
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-    }
+  .footer-container,
+  .nav-footer,
+  .footer-bottom,
+  .social-icons {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
 
-    .footer {
-      background-color: #2f3d7e;
-      padding: 0px;
-    }
+  .footer {
+    background-color: #2f3d7e;
+    padding: 0px;
+  }
 
-    .footer-container {
-      width: 100%;
-      padding: 70px 30px 20px;
-    }
+  .footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-    }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
 
-    .social-icons a {
-      text-decoration: none;
-      padding: 5px;
-      background-color: white;
-      margin: 10px;
-      border-radius: 70%;
-    }
+  .social-icons a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 70%;
+  }
 
-    .social-icons a i {
-      font-size: 2em;
-      color: #ffffff;
-      opacity: 0.9;
-    }
+  .social-icons a i {
+    font-size: 2em;
+    color: #ffffff;
+    opacity: 0.9;
+  }
 
-    .social-icons a:hover {
-      transition: 0.5s;
-      background-color: #2f3d7e;
-    }
+  .social-icons a:hover {
+    transition: 0.5s;
+    background-color: #2f3d7e;
+  }
 
-    .social-icons a i {
-      color: #00030f;
-      transition: 0.5s;
-    }
+  .social-icons a i {
+    color: #00030f;
+    transition: 0.5s;
+  }
 
-    .nav-footer {
-      margin: 30px 0px;
-    }
+  .nav-footer {
+    margin: 30px 0px;
+  }
 
-    .nav-footer ul {
-      display: flex;
-      justify-content: center;
-    }
+  .nav-footer ul {
+    display: flex;
+    justify-content: center;
+  }
 
-    .nav-footer ul a {
-      color: #dbd7d7;
-      font-size: 1.3em;
-      margin: 20px;
-      opacity: 0.7;
-      text-decoration: none;
-      transition: 0.5s
-    }
+  .nav-footer ul a {
+    color: #dbd7d7;
+    font-size: 1.3em;
+    margin: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: 0.5s
+  }
 
-    .nav-footer ul a:hover {
-      opacity: 1.5;
-    }
+  .nav-footer ul a:hover {
+    opacity: 1.5;
+  }
 
-    .footer-bottom {
-      background-color: #252424;
-      padding: 20px;
-      ;
-      text-align: center;
-    }
+  .footer-bottom {
+    background-color: #252424;
+    padding: 20px;
+    ;
+    text-align: center;
+  }
 
-    .footer-bottom p {
-      color: white;
-    }
+  .footer-bottom p {
+    color: white;
+  }
 
-    .cat {
-      opacity: 0.7;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 400;
-      margin: 0 5px;
+  .cat {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
 
-    }
+  }
 
-    .badge {
-      background-color: #2f3d7e
-    }
-   .flex-shrink-0{
-     width: 20rem;
-     height: 20rem;}
+  .badge {
+    background-color: #2f3d7e;  
+  }
 
-    h1 {
-      color: white;
-    }
-  .heading{
-    padding: 2rem;}
-   .list{
-      max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-    }
+  h1 {
+    color: white;
+  }
+  .flex-item {
+  box-sizing: border-box;
+  /* border: 8px solid blue; */
+  /* height: calc(160px - 2em); */
+  /* width: calc(50% - 2em); */
+  margin-left: 0.2em;
+  }
 </style>
 
 <body>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -201,10 +186,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.HTML">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="about-pets.html">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="service.html">Our-Service</a>
@@ -212,7 +197,7 @@
             <li class="nav-item">
               <a class="nav-link" href="us.html">About-Us</a>
             </li>
-          </ul>
+               </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="search" aria-label="Search">
             <button class="btn btn-outline-primary" type="submit"><a href="login.html">SignUp</a></button>
@@ -280,115 +265,133 @@
       </div>
     </div>
     <!-- CARD OPENED -->
-
-    <div class="row row-cols-1 row-cols-md-4 mt-1 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/cat-4638664_640.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">De-soz</h5>
-            <p class="card-text">Type:RADGOLL<br>Price:<b> $999</b><em>only</em></p>
+       
+       <div class="row row-cols-1 row-cols-md-4 mt-1 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/cat-4638664_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">De-soz</h5>
+              <p class="card-text">Type:RADGOLL<br>Price:<b> $999</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
           </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button> 
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/cat-4256821_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">British shortair</h5>
+              <p class="card-text">Type:SCOTTISH<br>Price:<b> $72</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/now.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kex Que</h5>
+              <p class="card-text">Type:MAINE COON<br>Price:<b> $241</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="row row-cols-1 row-cols-md-4 mt-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/HAG.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chinsha</h5>
+              <p class="card-text">Type:RUSSIAN BLUE<br>Price:<b> $1944</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/first.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">yun_Xui</h5>
+              <p class="card-text">Type:BIRMAN<br>Price:<b> $123</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Images/cat-6723256_640.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">lu-herdianya</h5>
+              <p class="card-text">Type:TURKISH<br>Price:<b> $999</b><em>only</em></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-primary" type="submit"><a href="products.html">View product</a></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/cat-4256821_640.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">British shortair</h5>
-            <p class="card-text">Type:SCOTTISH<br>Price:<b> $72</b><em>only</em></p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/now.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kex Que</h5>
-            <p class="card-text">Type:MAINE COON<br>Price:<b> $241</b><em>only</em></p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-4 mt-4 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/HAG.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Chinsha</h5>
-            <p class="card-text">Type:RUSSIAN BLUE<br>Price:<b> $1944</b><em>only</em></p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/first.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">yun_Xui</h5>
-            <p class="card-text">Type:BIRMAN<br>Price:<b> $123</b><em>only</em></p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="Images/cat-6723256_640.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">lu-herdianya</h5>
-            <p class="card-text">Type:TURKISH<br>Price:<b> $999</b><em>only</em></p>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-outline-primary" type="submit">View product</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- CARD CLOSED -->
     <div class="heading mt-5" style="text-align: center;">
       <div class="badge">
-        <h1>Why To Choose Us?</h1>
+        <h1>Our Gallerey</h1>
       </div>
     </div>
-    <div class="list">
-      <ul><img src="Images/istockphoto-522185081-612x612.jpg" class="flex-shrink-0 me-3 " alt="..."><br>
-        <h3>We care Your Pates</h3>
-        <p>This is some placeholder content for the custom component.<br> 
-          It is intended to mimic what some real-worldcontent<br>
-          would look like, and we're using it here to give <br>
-          the component a bit of body and size.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> 
-          Necessitatibus voluptatem nostrum tempore quasi,<br>
-          repellendus fugit itaque totam officia architecto,<br> eum temporibus explicabo
-          voluptatibus sint quia!</p>
-        <a href="#" class="stretched-link">Infos</a></ul>
+    <div class="d-flex mt-4">
+      <figure class="flex-item">
+        <img src="Images/istockphoto-1322248025-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      </figure>
+      <figure class="flex-item">
+        <img src="Images/istockphoto-522185081-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      </figure>
+      <figure class="flex-item">
+        <img src="Images/hhhhh.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      </figure>
+    </div>
+    <div class="d-flex">
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1193176664-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/animal-800760_640.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1041695846-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
       </div>
-   <div class="list">
-      <ul><img src="Images/istockphoto-824824466-612x612.jpg" class="flex-shrink-0" alt="..."><br>
-        <h3>Our varieties</h3>
-        <p>This is some placeholder content for the custom component.<br> 
-          It is intended to mimic what some real-worldcontent<br>
-          would look like, and we're using it here to give <br>
-          the component a bit of body and size.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> 
-          Necessitatibus voluptatem nostrum tempore quasi,<br>
-          repellendus fugit itaque totam officia architecto,<br> eum temporibus explicabo
-          voluptatibus sint quia!</p>
-        <a href="#" class="stretched-link">infos</a></ul>
-   </div>
+      <div class="d-flex">
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1336941116-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1158786964-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1379089656-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+      </div>
+      <div class="d-flex">
+        <figure class="flex-item">
+          <img src="Images/istockphoto-1193176664-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/istockphoto-629387028-612x612.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+        <figure class="flex-item">
+          <img src="Images/hhhhh.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </figure>
+      </div>
     <!-- END -->
   </div>
   <!-- fOOTER -->
